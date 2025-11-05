@@ -14,10 +14,10 @@ export default function FHEVisualizer() {
   const [step, setStep] = useState(0);
 
   const generateFakeEncryption = (num) => {
-    const base = parseInt(num) || 0;
+  const base = parseInt(num) || 0;
     return (base * 7919 + 31337).toString(16).toUpperCase().padStart(16, '0');
   };
-
+ 
   const handleEncrypt = () => {
     if (num1 && num2) {
       setEncrypted1(generateFakeEncryption(num1));
