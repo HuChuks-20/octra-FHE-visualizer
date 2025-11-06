@@ -13,7 +13,7 @@ export default function FHEVisualizer() {
   const [decryptedResult, setDecryptedResult] = useState(null);
   const [step, setStep] = useState(0);
 
-  const generateFakeEncryption = (num) => {
+ const generateFakeEncryption = (num: string) => {
   const base = parseInt(num) || 0;
     return (base * 7919 + 31337).toString(16).toUpperCase().padStart(16, '0');
   };
