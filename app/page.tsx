@@ -7,10 +7,14 @@ export default function FHEVisualizer() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');
   const [operation, setOperation] = useState('add');
-  const [encrypted1, setEncrypted1] = useState(null);
+  /*const [encrypted1, setEncrypted1] = useState(null);
   const [encrypted2, setEncrypted2] = useState(null);
   const [encryptedResult, setEncryptedResult] = useState(null);
-  const [decryptedResult, setDecryptedResult] = useState(null);
+  const [decryptedResult, setDecryptedResult] = useState(null);*/
+  const [encrypted1, setEncrypted1] = useState<string | null>(null);
+  const [encrypted2, setEncrypted2] = useState<string | null>(null);
+  const [encryptedResult, setEncryptedResult] = useState<string | null>(null);
+  const [decryptedResult, setDecryptedResult] = useState<number | null>(null);
   const [step, setStep] = useState(0);
 
  const generateFakeEncryption = (num: string) => {
